@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Order Page</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <header>
+        <img src="image/cart.png" alt="Cart Icon" class="header-cart-icon">
+        <img src="image/LOGO (2).png" alt="SupermarketLogo"> 
+        <h1 style="color: #BB8493; font-size: 66px;">Mega Mart</h1>  
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="dairy.html">Dairy Products</a></li>
+            <li><a href="vegetables.html">Vegetables</a></li>
+            <li><a href="cosmetics.html">Cosmetics & Skincare</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="loyalty.html">Loyalty Registration</a></li>
+        </ul>
+    </nav>
+    <center><h1>Grocery Order</h1>
+    <form id="orderForm">
+        <section id="fruits">
+            <h2>Fruits</h2>
+            <div>
+                <label for="apples">Apples (kg):</label>
+                <input type="number" id="apples" name="apples" min="0" step="0.1">
+            </div><br>
+            <div>
+                <label for="bananas">Bananas (kg):</label>
+                <input type="number" id="bananas" name="bananas" min="0" step="0.1">
+            </div><br>
+            <div>
+                <label for="orange">Orange(kg):</label>
+                <input type="number" id="orange" name="orange" min="0" step="0.1">
+            </div><br>
+            <div>
+                <label for="guava">Guava(kg):</label>
+                <input type="number" id="guava" name="guava" min="0" step="0.1">
+            </div><br>
+            <div>
+                <label for="mango">Mango(kg):</label>
+                <input type="number" id="mango" name="mango" min="0" step="0.1">
+            </div><br>
+            <div>
+                <label for="papaya">Papaya(kg):</label>
+                <input type="number" id="papaya" name="papaya" min="0" step="0.1">
+            </div><br>
+            <div>
+                <label for="watermelon">Watermelon(kg):</label>
+                <input type="number" id="watermelon" name="watermelon" min="0" step="0.1">
+            </div><br>
+        </section>
+
+        <section id="vegetables">
+            <h2>Vegetables</h2>
+            <div>
+                <label for="carrots">Carrots (kg):</label>
+                <input type="number" id="carrots" name="carrots" min="0" step="0.1">
+            </div><br>
+            <div>
+                <label for="broccoli">Broccoli (kg):</label>
+                <input type="number" id="broccoli" name="broccoli" min="0" step="0.1">
+            </div><br>
+            <div>
+                <label for="potato">Potato(kg):</label>
+                <input type="number" id="potato" name="potato" min="0" step="0.1">
+            </div><br>
+            <div>
+                <label for="cabbage">Cabbage (kg):</label>
+                <input type="number" id="cabbage" name="cabbage" min="0" step="0.1">
+            </div><br>
+            <div>
+                <label for="cucumber">Cucumber(kg):</label>
+                <input type="number" id="cucumber" name="cucumber" min="0" step="0.1">
+            </div><br>
+            <div>
+                <label for="garlic">Garlic(kg):</label>
+                <input type="number" id="garlic" name="garlic" min="0" step="0.1">
+            </div><br>
+        </section>
+
+        <section id="dairy">
+            <h2>Dairy Produce</h2>
+            <div>
+                <label for="milk">Milk bottle (quantity):</label>
+                <input type="number" id="milk" name="milk" min="0" step="1">
+            </div><br>
+            <div>
+                <label for="milkpacket">Milk packet (quantity):</label>
+                <input type="number" id="milkpacket" name="milkpacket" min="0" step="1">
+            </div><br>
+            <div>
+                <label for="cheese">Cheese (quantity):</label>
+                <input type="number" id="cheese" name="cheese" min="0" step="1">
+            </div><br>
+            <div>
+                <label for="butter">Butter (quantity):</label>
+                <input type="number" id="butter" name="butter" min="0" step="1">
+            </div><br>
+            <div>
+                <label for="yogurt">Yogurt (quantity):</label>
+                <input type="number" id="yogurt" name="yogurt" min="0" step="1">
+            </div><br>
+            <div>
+                <label for="curd">Curd (quantity):</label>
+                <input type="number" id="curd" name="curd" min="0" step="1">
+            </div><br>
+        </section>
+
+        <section id="meatSeafood">
+            <h2>Meat and Seafood</h2>
+            <div>
+                <label for="chicken">Chicken (kg):</label>
+                <input type="number" id="chicken" name="chicken" min="0" step="0.1">
+            </div><br>
+            <div>
+                <label for="fish">Fish (kg):</label>
+                <input type="number" id="fish" name="fish" min="0" step="0.1">
+            </div><br>
+            <div>
+                <label for="pork">Pork (kg):</label>
+                <input type="number" id="pork" name="pork" min="0" step="0.1">
+            </div><br>
+            <div>
+                <label for="prawns">Prawns (kg):</label>
+                <input type="number" id="prawns" name="prawns" min="0" step="0.1">
+            </div><br>
+        </section>
+
+        <section id="bakingCooking">
+            <h2>Baking and Cooking Ingredients</h2>
+            <div>
+                <label for="flour">Flour (quantity):</label>
+                <input type="number" id="flour" name="flour" min="0" step="1">
+            </div><br>
+            <div>
+                <label for="sugar">Sugar (quantity):</label>
+                <input type="number" id="sugar" name="sugar" min="0" step="1">
+            </div><br>
+            <div>
+                <label for="bakingpowder">Baking powder(quantity):</label>
+                <input type="number" id="bakingpowder" name="bakingpowder" min="0" step="1">
+            </div><br>
+            <div>
+                <label for="salt">Salt(quantity):</label>
+                <input type="number" id="salt" name="salt" min="0" step="1">
+            </div><br>
+            <div>
+                <label for="oil">Oil bottle (500ml) (quantity):</label>
+                <input type="number" id="oil" name="oil" min="0" step="1">
+            </div><br>
+            <div>
+                <label for="chillipowder">Chilli powder(quantity):</label>
+                <input type="number" id="chillipowder" name="chillipowder" min="0" step="1">
+            </div><br>
+        </section>
+        <br>
+        <button type="button" id="buyNow">Buy Now</button>
+        <button type="button" id="addToFavourites">Add to Favourites</button>
+        <button type="button" id="applyFavourites">Apply Favourites</button>
+    </form>
+    <br>
+    <table id="orderSummary">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total Price</td>
+                <td id="totalPrice">Rs.0.00</td>
+            </tr>
+        </tfoot>
+    </table></center>
+
+    <script src="script.js"></script>
+    <footer>
+        <div class="footer">
+            <div class="footerSocial">
+                <center><h1>Social Media</h1></center>
+                <center>
+                    <a href="#">
+                        <img src="image/insta.webp" alt="Instagram" style="width: 24px; height: 24px; vertical-align: middle;">
+                        Instagram
+                    </a>
+                    <a href="#">
+                        <img src="image/fb.png" alt="Facebook" style="width: 24px; height: 24px; vertical-align: middle;">
+                        Facebook
+                    </a>
+                    <a href="#">
+                        <img src="image/utube.webp" alt="YouTube" style="width: 24px; height: 24px; vertical-align: middle;">
+                        YouTube
+                    </a>
+                    <a href="#">
+                        <img src="image/x.webp" alt="Twitter" style="width: 24px; height: 24px; vertical-align: middle;">
+                        X
+                    </a>
+                </center> 
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

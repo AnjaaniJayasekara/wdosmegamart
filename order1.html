@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Order Page</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <header>
+   <img src="image/cart.png" alt="Cart Icon" class="header-cart-icon">
+      <img src="image/LOGO (2).png" alt="SupermarketLogo"> 
+        <h1 style="color: #BB8493; font-size: 66px;">Mega Mart</h1>  
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="dairy.html">Dairy Products</a></li>
+            <li><a href="vegetables.html">Vegetables</a></li>
+            <li><a href="cosmetics.html">Cosmetics & Skincare</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="loyalty.html">Loyalty Registration</a></li>
+        </ul>
+    </nav>
+    <main>
+        <center>
+            <h2>Your Order</h2>
+            <table id="order-summary-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total Price</td>
+                        <td id="order-total-price">$0.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="form-container">
+                <form id="details-form">
+                    <h2>Customer Details</h2>
+                
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <br>
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <br>
+                
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required><br>
+                    <br>
+                
+                    <label for="address">Delivery Address:</label>
+                    <input type="text" id="address" name="address" required><br>
+                    <br>
+                
+                    <h2>Payment Information</h2>
+                
+                    <label for="payment-method">Payment Method:</label>
+                    <select id="payment-method" name="payment-method" required>
+                        <option value="" disabled selected>Select a payment method</option>
+                        <option value="credit-card">Credit Card</option>
+                        <option value="debit-card">Debit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="cash-on-delivery">Cash on Delivery</option>
+                    </select><br>
+                    <br>
+                
+                    <div id="card-details" style="display: none;">
+                        <label for="card-number">Card Number:</label>
+                        <input type="text" id="card-number" name="card-number"><br>
+                        <br>
+                
+                        <label for="expiry-date">Expiry Date:</label>
+                        <input type="month" id="expiry-date" name="expiry-date"><br>
+                        <br>
+                
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" name="cvv" maxlength="4"><br>
+                        <br>
+                    </div>
+                
+                    <button type="submit">Pay</button>
+                </form>
+            </div>
+        </center>
+    </main>
+    <script src="script1.js"></script>
+    <footer>
+        <div class="footer">
+            <div class="footerSocial">
+                <center><h1>Social Media</h1></center>
+                <center>
+                    <a href="#">
+                        <img src="image/insta.webp" alt="Instagram" style="width: 24px; height: 24px; vertical-align: middle;">
+                        Instagram
+                    </a>
+                    <a href="#">
+                        <img src="image/fb.png" alt="Facebook" style="width: 24px; height: 24px; vertical-align: middle;">
+                        Facebook
+                    </a>
+                    <a href="#">
+                        <img src="image/utube.webp" alt="YouTube" style="width: 24px; height: 24px; vertical-align: middle;">
+                        YouTube
+                    </a>
+                    <a href="#">
+                        <img src="image/x.webp" alt="Twitter" style="width: 24px; height: 24px; vertical-align: middle;">
+                        X
+                    </a>
+                </center> 
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
